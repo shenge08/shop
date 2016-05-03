@@ -1,4 +1,4 @@
-/*删除商城数据库,如果存在*/
+ /*删除商城数据库,如果存在*/
 drop database if exists shop;
 /*创建数据库,并设置编码*/
 create database shop default character set utf8;

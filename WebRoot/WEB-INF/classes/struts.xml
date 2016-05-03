@@ -2,10 +2,19 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<package name="shop" extends="struts-default">
-		<action name="testAction_*" class="testAction" method="{1}">
-			<result name="success">/success.jsp</result>
+		<global-results>
+			<result name="main">/admin/main.jsp</result>
+		</global-results>
+		<action name="accountAction_*" method="{1}" class="accountAction">
+			<result name="queryAccount">/admin/account/queryAccount.jsp</result>
+			<result name="updateAccount">/admin/account/updateAccount.jsp</result>
 		</action>
-	
+		<action name="categoryAction_*" method="{1}" class="categoryAction">
+			<result name="queryCategory">/admin/category/queryCategory.jsp</result>
+			<result name="updateCategory">/admin/category/updateCategory.jsp</result>
+		</action>
+		<action name="goodsAction_*" method="{1}" class="goodsAction">
+		</action>
 	
 	
 	</package>

@@ -27,5 +27,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-  
+  	<listener>
+  		<listener-class>cn.hdu.shop.listener.ShopServletContextListener</listener-class>
+  	</listener>
  </web-app>

@@ -2,7 +2,25 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-<table name="student" catalog="test" class="cn.hdu.shop.pojo.Student">
+	<table name="student" catalog="test"
+		class="cn.hdu.shop.pojo.Student">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="account" catalog="shop"
+		class="cn.hdu.shop.pojo.Account">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="category" catalog="shop"
+		class="cn.hdu.shop.pojo.Category">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+<table name="goods" catalog="shop" class="cn.hdu.shop.pojo.Goods">
 	<primary-key>
 		<generator class="native"></generator>
 	</primary-key>
